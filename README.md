@@ -78,22 +78,22 @@ Run TerminalUI.java and type ? at the brainfuck> prompt to get help.
     .  Output the byte at the data pointer.
 
     ,  Input a byte at the data pointer. Typing a single character (and return)
-        enters the ASCII value of the character. Type more than 1 character (and
-        return) to enter a byte as a decimal number 000 thru 255.
+       enters the ASCII value of the character. Type more than 1 character (and
+       return) to enter a byte as a decimal number 000 thru 255.
 
     [  if the byte at the data pointer is zero, then instead of moving the
-        instruction pointer forward to the next command, jump it forward to
-        the command after the matching ] command.
+       instruction pointer forward to the next command, jump it forward to
+       the command after the matching ] command.
 
     ]  if the byte at the data pointer is nonzero, then instead of moving the
-        instruction pointer forward to the next command, jump it back to the
-        command after the matching [ command.
+       instruction pointer forward to the next command, jump it back to the
+       command after the matching [ command.
 
     BRAINFUCK LANGUAGE EXTENSIONS
     =============================
 
     !  Set a debug break point. Execution halts at a break point only if break
-        mode is on.
+       mode is on.
 
     _  Do nothing (skip this instruction).
 
